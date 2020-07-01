@@ -11,7 +11,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Login + Hak Akses (PHP)</title>
+        <title>basic learning php</title>
         <!-- Load File CSS Bootstrap  -->
         <link href="<?php echo $base_url.'css/bootstrap.min.css'; ?>" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,6 +53,24 @@
                 <h2 class="form-signin-heading">Silahkan login</h2>
                 <!-- </?php include "config.php"; // Load file config.php ?> -->
                 <?php if (isset($_GET['config'])) { include "config.php"; }  ?>
+                <?php
+                    // Cek apakah terdapat cookie dengan nama message
+                    if(isset($_COOKIE["message"])){ // Jika ada
+                        echo '<div class="alert alert-danger">'.$_COOKIE["message"].'</div>'; // Tampilkan pesannya
+                        setcookie("message","delete",time()-1, "/"); // Kita delete cookie message
+                    }
+                ?>
+                <form method="post" action="system/login.php">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
             </div>
         </div>
     </body>

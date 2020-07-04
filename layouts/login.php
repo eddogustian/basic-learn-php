@@ -1,6 +1,6 @@
 <?php
-    // include "system/connection.php";
-    if (isset($_GET['connection'])) { include "system/connection.php"; } 
+    include "../system/connection.php";
+    include "../config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,8 +51,6 @@
         <div class="container">
             <div class="form-signin">
                 <h2 class="form-signin-heading">Silahkan login</h2>
-                <!-- </?php include "config.php"; // Load file config.php ?> -->
-                <?php if (isset($_GET['config'])) { include "config.php"; }  ?>
                 <?php
                     // Cek apakah terdapat cookie dengan nama message
                     if(isset($_COOKIE["message"])){ // Jika ada

@@ -1,5 +1,6 @@
 <?php
-    include "system/connection.php";
+    include "../system/connection.php";
+    include "../config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Login + Hak Akses (PHP)</title>
+        <title>basic learning php</title>
         <!-- Load File CSS Bootstrap  -->
         <link href="<?php echo $base_url.'css/bootstrap.min.css'; ?>" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -60,7 +61,6 @@
             </div>
         </nav>
         <div class="container">
-            <?php include "config.php"; // Load file config.php ?>
         </div>
         <!-- Load file Javascript Bootstrap & jQuery -->
         <script src="<?php echo $base_url.'js/jquery.min.js'; ?>"></script>

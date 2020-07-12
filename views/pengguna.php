@@ -20,8 +20,8 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>rizaldi</td>
-                <td>Rizaldi Maulidia Achmad</td>
+                <td>rafi ahmad</td>
+                <td>raffi Ahmad</td>
                 <td>Admin</td>
                 <td>
                     <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -30,8 +30,8 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td>siska</td>
-                <td>Siska Melina Rachman</td>
+                <td>nagita</td>
+                <td>nagita slavina</td>
                 <td>Operator</td>
                 <td>
                     <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>

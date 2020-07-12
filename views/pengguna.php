@@ -18,21 +18,20 @@
             </tr>
         </thead>
         <tbody>
+            <?php 
+                include 'system/connection.php';
+                $no = 1;
+                $sql = $pdo->prepare("SELECT * FROM user");
+                $sql->execute(); // Eksekusi querynya
+                $data = $sql->fetch(); // Ambil datanya dari hasil query tadi
+
+                // var_dump($data['nama']);die();
+		    ?>
             <tr>
-                <td>1</td>
-                <td>rafi ahmad</td>
-                <td>raffi Ahmad</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
-                    <a href="" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>nagita</td>
-                <td>nagita slavina</td>
-                <td>Operator</td>
+                <td><?php echo $no++; ?></td>
+                <td><?php echo $data['username'] ?></td>
+                <td><?php echo $data['nama'] ?></td>
+                <td><?php echo $data['role'] ?></td>
                 <td>
                     <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
                     <a href="" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>

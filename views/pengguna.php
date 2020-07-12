@@ -33,8 +33,8 @@
                 <td><?php echo $data['nama'] ?></td>
                 <td><?php echo $data['role'] ?></td>
                 <td>
-                    <a href="" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
-                    <a href="" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a href="edit.php?id=<?php echo $d['id']; ?>" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="hapus.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
                 </td>
             </tr>
         </tbody>

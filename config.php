@@ -29,7 +29,11 @@ if(isset($_SESSION['username'])){ // Jika sudah login
 			include "system/pengguna/add.php";
 			break;
 
-			case 'add-user':
+			case 'action-add':
+			include "system/pengguna/action_add.php";
+			break;
+
+			case 'edit-user':
 			include "system/pengguna/edit.php";
 			break;
 

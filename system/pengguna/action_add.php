@@ -1,16 +1,20 @@
 <?php 
 // koneksi database
-include 'koneksi.php';
+include 'system/connection.php';
  
 // menangkap data yang di kirim dari form
+$usernmae = $_POST['username'];
 $nama = $_POST['nama'];
-$nim = $_POST['nim'];
-$alamat = $_POST['alamat'];
+$password = md5($_POST['password']);
+$role = $_POST['role'];
  
 // menginput data ke database
-mysqli_query($koneksi,"insert into mahasiswa values('','$nama','$nim','$alamat')");
+$sql = "INSERT INTO user VALUES ('$usernmae','$nama','$password',$role')";
+$pdo->prepare($sql)->execute();
+
+// mysqli_query("INSERT INTO user VALUES('$usernmae','$nama','$password',$role')");
  
 // mengalihkan halaman kembali ke index.php
-header("location:index.php");
+header('Location: '.base_url(). 'index.php?page=pengguna');
  
 ?>

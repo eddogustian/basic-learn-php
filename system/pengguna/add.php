@@ -8,19 +8,23 @@
 	<br/>
 	<br/>
 	<h3>TAMBAH DATA USER</h3>
-	<form method="post" action="tambah_aksi.php">
+	<form method="post" action="<?php echo $base_url.'index.php?page=action-add'; ?>">
 		<table>
 			<tr>			
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
 				<td>Nama</td>
 				<td><input type="text" name="nama"></td>
 			</tr>
 			<tr>
-				<td>NIM</td>
-				<td><input type="number" name="nim"></td>
+				<td>Password</td>
+				<td><input type="text" name="password"></td>
 			</tr>
 			<tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
+				<td>Role</td>
+				<td><input type="text" name="role"></td>
 			</tr>
 			<tr>
 				<td></td>

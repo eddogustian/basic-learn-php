@@ -1,4 +1,4 @@
-<h3>My Notes Code</h3>
+<h3>Pondok Hijau</h3>
 <br>
-Telepon : 022-0123456<br>
-Jl.Jend. Gatot Subroto No.123 Bandung
+Telepon : 08111111111<br>
+Jl. Margonda raya kober, Pondok Cina. Depok

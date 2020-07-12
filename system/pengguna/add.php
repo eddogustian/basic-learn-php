@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CRUD PHP dan MySQLi</title>
+	<title>add user</title>
 </head>
 <body>
- 
-	<h2>CRUD DATA MAHASISWA</h2>
-	<br/>
-	<a href="index.php">KEMBALI</a>
+	<a href="<?php echo $base_url.'index.php?page=pengguna'; ?>">KEMBALI</a>
 	<br/>
 	<br/>
-	<h3>TAMBAH DATA MAHASISWA</h3>
+	<h3>TAMBAH DATA USER</h3>
 	<form method="post" action="tambah_aksi.php">
 		<table>
 			<tr>			

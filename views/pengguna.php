@@ -1,5 +1,5 @@
 <div class="pull-right">
-    <a href="" class="btn btn-success">TAMBAH DATA</a>
+    <a href="<?php echo $base_url.'index.php?page=add-user'; ?>" class="btn btn-success">TAMBAH DATA</a>
 </div>
 
 <h2 style="margin-top: 0;margin-bottom: 0;">Pengguna</h2>
@@ -33,8 +33,8 @@
                 <td><?php echo $data['nama'] ?></td>
                 <td><?php echo $data['role'] ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $d['id']; ?>" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
-                    <a href="hapus.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a href="system/pengguna/edit.php?id=<?php echo $data['id']; ?>" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="system/pengguna/hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
                 </td>
             </tr>
         </tbody>

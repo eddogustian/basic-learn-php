@@ -25,6 +25,14 @@ if(isset($_SESSION['username'])){ // Jika sudah login
 			include "views/kontak.php"; // load file kontak.php yang ada di folder views
 			break;
 
+			case 'add-user':
+			include "system/pengguna/add.php";
+			break;
+
+			case 'add-user':
+			include "system/pengguna/edit.php";
+			break;
+
 			// case 'case_selanjutnya':
 			// include "views/case_selanjutnya.php";
 			// break;
